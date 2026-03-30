@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الضحايا الصامتون - د. لمياء العنزي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0f172a; /* Dark slate */
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        /* Background animated gradient */
+        .bg-gradient-anim {
+            background: linear-gradient(-45deg, #0f172a, #1e1b4b, #000000, #171717);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Abstract blurred shapes for atmosphere */
+        .glow-shape {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.3;
+            z-index: -1;
+            animation: float 10s infinite ease-in-out;
+        }
+        .shape-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: #312e81; }
+        .shape-2 { bottom: -10%; right: -10%; width: 40vw; height: 40vw; background: #4c1d95; animation-delay: -5s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(20px) scale(1.05); }
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1.2s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Typography enhancements */
+        p {
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .quote-mark {
+            font-size: 4rem;
+            color: #6366f1;
+            opacity: 0.3;
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-family: serif;
+        }
+
+    </style>
+</head>
+<body class="antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Elements -->
+    <div class="bg-gradient-anim"></div>
+    <div class="glow-shape shape-1"></div>
+    <div class="glow-shape shape-2"></div>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
+        <div class="reveal active space-y-6 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-wide leading-tight">
+                الضحايا <span class="text-indigo-400">الصامتون</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 font-light mt-4">
+                وراء كل ورقة طلاق... أرواح صغيرة تدفع الثمن
+            </p>
+            <div class="pt-12 animate-bounce opacity-50">
+                <svg class="w-6 h-6 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-6 py-20 space-y-32 text-lg md:text-2xl leading-relaxed md:leading-loose text-gray-300 font-light">
+        
+        <section class="reveal relative">
+            <span class="quote-mark">"</span>
+            <p>لما الأم والأب يطلقوا، الكل بيفكر إن المشكلة بس بينهم! بس الحقيقة... <strong class="text-white font-medium">المشكلة كلها تنزل على راس الأولاد.</strong></p>
+            <p class="mt-6">إنتوا بتفكروا إن الولد رح ينسى؟ لا، الولد بيكبر وهو شايل الوجع. بيكبر وهو متشرّد بينهم، يوم عنده ويوم عندها، يوم بشوف حب، يوم بشوف صراخ، ويوم بشوف مشاكل!</p>
+        </section>
+
+        <section class="reveal border-r-4 border-indigo-500 pr-6">
+            <p>أكبر كذبة بحكيها المجتمع (إلا من رحم ربي طبعاً): <span class="text-indigo-300">"بكرة الولاد تكبر وتنسى!"</span> أو <span class="text-indigo-300">"بكرة الولاد بتتعود!"</span></p>
+            <p class="mt-6 font-medium text-white">لا يا سيدي الكريم، الولاد ما رح يتعودوا ولا رح ينسوا.</p>
+        </section>
+
+        <section class="reveal">
+            <p>الولد ما بيتعود يعيش بلا أمان، ما بيتعود يشوف أمه وأبوه بتهاوشوا. إنتوا طلعتوا من بعض، هاي حياتكم وما حدا إله فيها، <strong class="text-white">بس ليه بتطلقوا دوركم كأهل؟</strong></p>
+            <p class="mt-6">ليش بتخلوا الولد يحس حاله حمل ثقيل على أحدهما؟ ليش تستعملوا بنتكم أو ابنكم بينكم كسلاح لتصفية حسابات بينكم؟</p>
+        </section>
+
+        <section class="reveal bg-white/5 p-8 rounded-2xl backdrop-blur-sm shadow-2xl">
+            <p class="text-center text-xl md:text-3xl text-white font-medium leading-normal">
+                الولد ما بهمه مين غلط! <br><br>
+                الولد بهمه الشخص الي رح يكسبه، ومين يعطيه الحب والأمان والحنان، ومين الي رح يسمعه، ومين الي حيكون جنبه وما رح يتخلى عنه أبداً لو شو ما كان السبب بالحياة... <span class="text-indigo-400">هذا إهتمام الولاد.</span>
+            </p>
+        </section>
+
+        <section class="reveal">
+            <p>الطلاق مش مجرد ورقة بتنهي علاقة، بل هو قصة كاملة، فيها حب كان، وأمل انكسر، وقرار صعب انولد من تعب طويل. الطلاق مش دايمًا فشل، أحيانًا يكون حل، خصوصًا لما تصبح العلاقة مؤذية نفسيًا أو خالية من الاحترام؛ الانفصال قد يكون بداية جديدة، وليس نهاية.</p>
+            <p class="mt-6">وراء كل طلاق مشاعر ما حد بيشوفها… دموع، خوف، وحدة، وأحيانًا راحة بعد تعب طويل، فمش كل من يضحك بعد الطلاق سعيد، ومش كل من يصمت قوي.</p>
+            <p class="mt-6 font-medium text-indigo-200">الزواج مسؤولية، والطلاق قرار كبير، ولازم ما يكون أول حل لأي مشكلة، بس كمان ما يكون آخر عذاب نتحمله.</p>
+        </section>
+
+        <section class="reveal relative">
+            <div class="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-50"></div>
+            <p>الأطفال في كل هذا ليسوا مجرد أطراف ثانوية، <strong class="text-white">هم أرواح صغيرة تحس بكل كلمة</strong>، كل صمت، وكل خلاف بين الأم والأب.</p>
+            <p class="mt-6">الأطفال غالبًا يكونوا الضحايا الصامتين، يشعرون بالضياع والارتباك، ولا يفهمون سبب التغيير المفاجئ في حياتهم، وأحيانًا يحملون ذنب الانفصال رغم أنه ليس ذنبهم، والخلافات المستمرة قد تؤثر على نفسيّتهم وتعليمهم وعلاقاتهم المستقبلية.</p>
+        </section>
+
+        <section class="reveal">
+            <p>عندما يركز الأهل على مشاكلهم الشخصية ويتجاهلون مشاعر أولادهم، ينمو في قلوب الأطفال شعور بالوحدة والخوف، ويترك ذلك أثرًا طويل الأمد على ثقتهم بأنفسهم وعلاقاتهم المستقبلية.</p>
+            <p class="mt-6 text-xl md:text-2xl font-medium text-white border-b border-indigo-500/30 pb-6">
+                حتى لو كان الطلاق ضروريًا، فكروا بالأطفال قبل كل شيء، فالكلمات، التصرفات، وحتى الصمت أمامهم، قد يكون سبب أمانهم أو جرحهم الأبدي.
+            </p>
+        </section>
+
+        <section class="reveal">
+            <p>الطلاق ليس مجرد قرار بين الكبار، هو حزن ينكسر داخليًا، وفراغ يملأ القلب، وذكريات تتشظى في كل زاوية من البيت. الحب الذي كان بالأمس صار صدى بعيدًا، والوعود التي كانت تعطر الحياة صارت صمتًا موجعًا.</p>
+            <p class="mt-6">الأطفال يشاهدون كل شيء، يحسّون بكل كلمة ودمعة، وهم أكثر من يتأذى من هذا الانفصال، <span class="text-white">ويحملون صمتهم كحِمل كبير على قلوبهم الصغيرة.</span></p>
+        </section>
+
+        <section class="reveal text-center pt-10">
+            <p class="text-xl md:text-3xl leading-relaxed">
+                الطلاق يعلمنا أن بعض الانتهاء يكون مؤلمًا لدرجة أنه يترك أثرًا في الروح قبل المكان، وأن الحياة أحيانًا تفرض علينا فقدان ما كنا نريد أن نفقده، مهما حاولنا الصمود...
+            </p>
+            <p class="mt-12 text-2xl md:text-4xl text-white font-bold">
+                آخر شي رح أحكي...
+            </p>
+            <p class="mt-6 text-2xl md:text-4xl text-red-400 font-medium pb-20">
+                إذا ما كنت جنبه بيوم من الأيام وفجأة اختفيت عنه، لا تسأل ليش غاب عنك بكرة.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer / Author -->
+    <footer class="border-t border-white/10 bg-black/30 backdrop-blur-md py-12 mt-20">
+        <div class="max-w-3xl mx-auto px-6 text-center reveal">
+            <p class="text-gray-400 text-lg mb-2">بقلم وإعداد</p>
+            <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-l from-indigo-400 to-purple-400">
+                الدكتورة لمياء العنزي
+            </h3>
+        </div>
+    </footer>
+
+    <!-- Intersection Observer Script for Scroll Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+
+            const revealOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Optional: Stop observing once revealed
+                        // observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15 // Trigger when 15% of the element is visible
+            });
+
+            reveals.forEach(reveal => {
+                revealOnScroll.observe(reveal);
+            });
+        });
+    </script>
+</body>
+</html>
+
